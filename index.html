@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+        /* 全局重置与基础样式：零外部依赖，系统默认字体 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: #24292e;
+            background-color: #ffffff;
+        }
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a:visited {
+            color: #6f42c1;
+        }
+
+        /* 头部样式 */
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid #eaecef;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .logo {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #24292e;
+        }
+        nav a {
+            margin-left: 1.5rem;
+            font-size: 1rem;
+        }
+
+        /* 主体内容样式 */
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        article {
+            margin-bottom: 2.5rem;
+        }
+        article h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        article h2 a {
+            color: #24292e;
+        }
+        article h2 a:hover {
+            color: #0366d6;
+        }
+        .date {
+            color: #6a737d;
+            font-size: 0.875rem;
+            margin-bottom: 0.75rem;
+        }
+        .summary {
+            color: #24292e;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            line-height: 1.6;
+        }
+
+        /* 底部样式 */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #6a737d;
+            font-size: 0.875rem;
+            border-top: 1px solid #eaecef;
+            margin-top: 3rem;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="/index.html">My Blog</a></div>
+        <nav>
+            <a href="/archive.html">Archive</a>
+            <a href="/about.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 文章1：修改下方标题、日期、摘要、链接即可 -->
+        <article>
+            <h2><a href="/posts/post1.html">如何搭建零追踪的静态博客</a></h2>
+            <p class="date">2026-05-20</p>
+            <p class="summary">本文详细介绍如何搭建一个完全无追踪、无外部依赖的个人博客，从代码编写到部署上线，全程无需第三方服务，彻底保护访客隐私。</p>
+        </article>
+
+        <!-- 文章2：修改下方标题、日期、摘要、链接即可 -->
+        <article>
+            <h2><a href="/posts/post2.html">静态网站部署指南：GitHub Pages vs Cloudflare Pages</a></h2>
+            <p class="date">2026-05-18</p>
+            <p class="summary">对比两大主流静态托管平台的优缺点，从部署速度、自定义域名、HTTPS支持等维度分析，帮你选择最适合自己的托管方案。</p>
+        </article>
+
+        <!-- 文章3：修改下方标题、日期、摘要、链接即可 -->
+        <article>
+            <h2><a href="/posts/post3.html">极简主义写作：为什么我放弃了富文本编辑器</a></h2>
+            <p class="date">2026-05-15</p>
+            <p class="summary">回归纯文本写作的体验，摆脱格式束缚，专注于内容本身。分享我使用Markdown写作的工作流和工具选择。</p>
+        </article>
+
+        <!-- 文章4：修改下方标题、日期、摘要、链接即可 -->
+        <article>
+            <h2><a href="/posts/post4.html">Linux 服务器安全加固实践笔记</a></h2>
+            <p class="date">2026-05-10</p>
+            <p class="summary">记录自己给Linux服务器做安全加固的全过程，包括SSH配置、防火墙设置、fail2ban部署等常见操作，适合新手参考。</p>
+        </article>
+
+        <!-- 文章5：修改下方标题、日期、摘要、链接即可 -->
+        <article>
+            <h2><a href="/posts/post5.html">老派技术社区的审美为什么永远不会过时</a></h2>
+            <p class="date">2026-05-05</p>
+            <p class="summary">从Hacker News到Lobsters，探讨极简、高效、无干扰的设计哲学，为什么这种风格在如今的花哨网页中依然有强大的生命力。</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2026 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
