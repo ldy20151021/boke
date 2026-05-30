@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 上方title标签修改为你的文章标题，格式：文章名 - My Blog -->
+    <title>文章标题 - My Blog</title>
+    <style>
+        /* 全局样式与首页完全一致，保证风格统一 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            color: #24292e;
+            background-color: #ffffff;
+        }
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a:visited {
+            color: #6f42c1;
+        }
 
+        /* 头部样式 */
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+         
