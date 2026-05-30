@@ -23,11 +23,59 @@ social:
 
 paginate: 10
 
-plugins:
-  - jekyll-paginate
-  - jekyll-archives
-  - jekyll-seo-tag
-  - jekyll-feed
+kramdown:
+  footnote_backlink: "&#8617;︎"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
+  - scope:
+      path: ""
+      type: tabs
+    values:
+      layout: page
+      permalink: /:title/
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - README.md
+  - LICENSE
 
 jekyll-archives:
   enabled: [categories, tags]
@@ -35,5 +83,5 @@ jekyll-archives:
     category: category
     tag: tag
   permalinks:
-    category: /category/:name/
-    tag: /tag/:name/
+    tag: /tags/:name/
+    category: /categories/:name/
